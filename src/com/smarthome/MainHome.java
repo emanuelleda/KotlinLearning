@@ -26,13 +26,14 @@ public class MainHome {
         System.out.println(lampada.mostrarInfo());
 
         System.out.println("\n=== STATUS DO SISTEMA ===");
-        System.out.println(String.format("Dispositivos ativos no momento: %d",
-                minhaCasa.getContadorDispositivosLigados()));
+        System.out.printf("Dispositivos ativos no momento: %d%n",
+                minhaCasa.getContadorDispositivosLigados());
 
         System.out.println("\n=== FINALIZANDO DIA ===");
         minhaCasa.desligarTodosOsDispositivos();
 
-        System.out.println(String.format("Contagem final de ativos: %d",
-                minhaCasa.getContadorDispositivosLigados()));
+        System.out.printf("Contagem final de ativos: %d%n",
+                minhaCasa.getContadorDispositivosLigados());
+
     }
 }
