@@ -1,30 +1,21 @@
 # 🏠 SmartHome System (Java)
 
-Este projeto é uma simulação de um ecossistema de casa inteligente, desenvolvido para praticar conceitos avançados de **Programação Orientada a Objetos (POO)** em Java. O sistema permite controlar dispositivos como Smart TVs e Lâmpadas através de uma interface gráfica e um serviço centralizado.
+Este projeto simula um sistema de casa inteligente para praticar **Programação Orientada a Objetos (POO)** em Java.
 
-## 🛠️ Tecnologias e Ferramentas
+## 🛠️ Tecnologias
 * **Linguagem:** Java (OpenJDK 25)
-* **Interface Gráfica:** Java Swing
-* **Arquitetura:** Baseada no padrão MVC (Model-View-Controller)
-* **Versionamento:** Git & GitHub
 * **Ambiente:** Ubuntu Linux
+* **IDE:** IntelliJ IDEA
 
-## 🏗️ Estrutura do Projeto
-O código está organizado em pacotes para garantir a separação de responsabilidades:
+## 🏗️ Conceitos Aplicados
+* **Abstração e Herança**: Classe base `SmartDevice` para todos os aparelhos.
+* **Interfaces**: Contratos `ComVolume` e `ComBrilho` para habilidades específicas.
+* **Encapsulamento**: Controle rigoroso do estado dos dispositivos e do contador central.
 
-* **`com.smarthome.model`**: Contém a classe abstrata `SmartDevice` e as interfaces `ComVolume` e `ComBrilho`.
-* **`com.smarthome.devices`**: Implementações reais dos dispositivos (`SmartTvDevice` e `LampadaInteligente`).
-* **`com.smarthome.service`**: Classe `CasaInteligente` que gerencia a lógica de negócio e contagem de dispositivos.
-* **`com.smarthome.view`**: Interface gráfica (`JanelaCasa`) com log de atividades em tempo real.
-
-## 🚀 Funcionalidades
-* **Controle de TV**: Ligar/Desligar, ajuste de volume e troca de canais.
-* **Controle de Iluminação**: Ligar/Desligar e ajuste de intensidade de brilho.
-* **Log de Atividades**: Visualização em tempo real das ações executadas através de uma interface estilo terminal.
-* **Gestão de Energia**: Contador central de quantos dispositivos estão ativos no momento.
-
-## 📸 Interface
-A interface utiliza o visual nativo do sistema operacional (GTK no Ubuntu) e conta com um painel lateral de comandos e uma área de histórico com visual "dark mode".
+## 📁 Estrutura de Pacotes
+* `com.smarthome.model`: Abstrações e interfaces.
+* `com.smarthome.devices`: Implementações de Smart TV e Lâmpada.
+* `com.smarthome.service`: Lógica centralizada na classe `CasaInteligente`.
 
 ---
-Desenvolvido por **Emanuel** (emanuelleda) como parte de estudos em arquitetura de software e Java.
+Desenvolvido por **Emanuel** (emanuelleda).
